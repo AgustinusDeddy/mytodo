@@ -2,7 +2,7 @@
   "name": "redux-simple-starter",
   "version": "1.0.0",
   "engines": {
-    "node": "4.1.1",
+    "node": "4.4.2",
     "npm": "3.10.6"
   },
   "description": "Simply my todo list app",
