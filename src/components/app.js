@@ -15,7 +15,6 @@ export default class App extends Component {
       <div className="main">
         <h2>My todo list</h2>
         <Add />
-        &nbsp;
         <Filter />
         <TodoList />      
       </div>
