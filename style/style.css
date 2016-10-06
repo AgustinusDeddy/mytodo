@@ -1,0 +1,20 @@
+.Pending {
+    background-color: red;
+}
+
+.Done {
+    background-color: green;
+}
+
+tbody tr {
+    color: white;
+}
+
+tbody tr:hover {
+    color: black;
+    cursor: pointer;
+}
+
+tbody tr .glyphicon {
+    font-size: 20px;
+}
