@@ -31,7 +31,6 @@ export default function(state = [], action) {
             return state.filter(s => { return (s.id != action.payload) } );
         case FILTER_TASK :
             filterStatus = action.payload;
-
             return state.map(t => visibility(t, action.payload));
     }
     return state;

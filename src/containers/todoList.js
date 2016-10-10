@@ -39,16 +39,19 @@ class TodoList extends Component {
     render(){
 
         return (
-            <table className="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Tasks</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.props.tasks.map(this.renderTask, this)}
-                </tbody>
-            </table>
+            <div>
+                <table className="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Tasks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.props.tasks.map(this.renderTask, this)}
+                    </tbody>
+                </table>
+                <p>Showing {this.props.tasks.filter(t => {return t.visible == true;}).length} task(s) out of {this.props.tasks.length}</p>
+            </div>
         );
     }
 }
